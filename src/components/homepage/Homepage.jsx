@@ -37,7 +37,7 @@ function Homepage() {
             <li className="service-item">
 
               <div className="service-icon-box">
-                <img src="images/system-design-icon.svg" alt="design-icon" width="40"/>
+                <img src="icons/system-design-icon.svg" alt="design-icon" width="40"/>
               </div>
 
               <div className="service-content-box">
@@ -53,7 +53,7 @@ function Homepage() {
             <li className="service-item">
 
               <div className="service-icon-box">
-                <img src="images/code-square-icon.svg" alt="code-icon" width="45"/>
+                <img src="icons/code-square-icon.svg" alt="code-icon" width="45"/>
               </div>
 
               <div className="service-content-box">
@@ -69,7 +69,7 @@ function Homepage() {
             <li className="service-item">
 
               <div className="service-icon-box">
-                <img src="images/controller-icon.svg" alt="controller-icon" width="45"/>
+                <img src="icons/controller-icon.svg" alt="controller-icon" width="45"/>
               </div>
 
               <div className="service-content-box">
@@ -85,7 +85,7 @@ function Homepage() {
             <li className="service-item">
 
               <div className="service-icon-box">
-                <img src="images/eight-ball-icon.svg" alt="eight-ball-icon" width="40"/>
+                <img src="icons/eight-ball-icon.svg" alt="eight-ball-icon" width="40"/>
               </div>
 
               <div className="service-content-box">
