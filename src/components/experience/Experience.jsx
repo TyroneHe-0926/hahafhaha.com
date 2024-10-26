@@ -5,14 +5,106 @@ function Experience() {
     <article className="resume" data-page="experience">
 
         <header>
-          <h2 className="h2 article-title">Resume</h2>
+          <h2 className="h2 article-title">Experience</h2>
         </header>
 
         <section className="timeline">
 
           <div className="title-wrapper">
             <div className="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 className="h3">Work</h3>
+          </div>
+
+          <ol className="timeline-list">
+
+            <li className="timeline-item">
+
+              <h4 className="h4 timeline-item-title">Electronic Arts</h4>
+
+              <span>Oct 2024 - Present</span>
+
+              <p className="timeline-text">
+                Started my first full-time job as a Site Reliability Engineer. 
+                Currently working on game marketplace and player-to-player gifting and trading platform.
+              </p>
+
+            </li>
+
+            <li className="timeline-item">
+
+              <h4 className="h4 timeline-item-title">Trend Micro</h4>
+
+              <span>May 2024 - Aug 2024</span>
+
+              <p className="timeline-text">
+                Site Reliability Engineer internship.
+                Worked on various projects such as Slack notification and alerting for AWS service metrics, Jenkins to GitHub Action migration, an internal Kubernetes tutorial, x86 to ARM64 migration, and more.
+              </p>
+
+            </li>
+
+            <li className="timeline-item">
+
+              <h4 className="h4 timeline-item-title">RBC</h4>
+
+              <span>Jan 2024 - Apr 2024</span>
+
+              <p className="timeline-text">
+                IAM Infrastructure internship.
+                Designed and implemented a new CIAM auditing system with Okta and Ansible. Gained a lot of knowledge about windows server and Stonebranch scheduling as well.
+              </p>
+
+            </li>
+
+            <li className="timeline-item">
+
+              <h4 className="h4 timeline-item-title">BaixingAI</h4>
+
+              <span>May 2023 - Aug 2023</span>
+
+              <p className="timeline-text">
+                Backend and Site Reliability Engineer internship. Worked on a LLM centralization and chatbot creation platform. Configured the infrastructure in a serverless k8s cluster. Designed and implemented chat protocal with SSE. Implemented a solution for developers to host their LLMs on the platform.
+              </p>
+
+            </li>
+
+            <li className="timeline-item">
+
+              <h4 className="h4 timeline-item-title">Big Shooter Golf</h4>
+
+              <span>Sept 2022 - Dec 2022</span>
+
+              <p className="timeline-text">
+                Fullstack Developer internship.
+                Worked on the cross-platform mobile app for a VR and blockchain based startup. Worked with React/StencilJS, and StorybookJS for the frontend stack. Worked with Flask and Quick Admin for the backend stack. 
+              </p>
+
+            </li>
+
+            <li className="timeline-item">
+
+              <h4 className="h4 timeline-item-title">Baixing.com (Former Kijiji China)</h4>
+
+              <span>Jan 2021 - Dec 2021</span>
+
+              <p className="timeline-text">
+                Software Engineering internship. I created and maintained a media search engine.                Worked on building physical servers for ML. Built a media ETL pipline ingests millions of videos to our internal data lake. Overall a really cool experience to start off my journey and learned a lot!
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section className="timeline">
+
+          <div className="title-wrapper">
+            <div className="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
             </div>
 
             <h3 className="h3">Education</h3>
@@ -22,166 +114,41 @@ function Experience() {
 
             <li className="timeline-item">
 
-              <h4 className="h4 timeline-item-title">University school of the arts</h4>
+              <h4 className="h4 timeline-item-title">University of Waterloo</h4>
 
-              <span>2007 — 2008</span>
+              <span>2020 — 2025</span>
 
               <p className="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Software Engineering undergrad student. SE at uWaterloo is a 5-year program with 3 years of taking academic courses in school and 2 years of internships. The 2 years of internships are further broken down into six 4-month terms. Can't say I liked the school and Waterloo but love the internship oppurtunities it provides.
               </p>
 
             </li>
 
             <li className="timeline-item">
 
-              <h4 className="h4 timeline-item-title">New york academy of art</h4>
+              <h4 className="h4 timeline-item-title">Elgin Park Secondary</h4>
 
-              <span>2006 — 2007</span>
+              <span>2016-2019</span>
 
               <p className="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                Finished my Highschool Diploma in Surrey, BC. Took AP pyschology, computer science A, micro and macro economics at the same time. Also founder of the Elgin Robotics club and competed in the FTC league. Best record was second place at a provincial tournament.
               </p>
 
             </li>
-
+            
             <li className="timeline-item">
 
-              <h4 className="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p className="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section className="timeline">
-
-          <div className="title-wrapper">
-            <div className="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 className="h3">Experience</h3>
-          </div>
-
-          <ol className="timeline-list">
-
-            <li className="timeline-item">
-
-              <h4 className="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p className="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li className="timeline-item">
-
-              <h4 className="h4 timeline-item-title">Art director</h4>
+              <h4 className="h4 timeline-item-title">WFLMS</h4>
 
               <span>2013 — 2015</span>
 
               <p className="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li className="timeline-item">
-
-              <h4 className="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p className="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                World Forigen Language Middle School in Shanghai, China. Studied there for two years before moving to Vancouver.
               </p>
 
             </li>
 
           </ol>
-
-        </section>
-
-        <section className="skill">
-
-          <h3 className="h3 skills-title">My skills</h3>
-
-          <ul className="skills-list content-card">
-
-            <li className="skills-item">
-
-              <div className="title-wrapper">
-                <h5 className="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div className="skill-progress-bg">
-                <div className="skill-progress-fill" style={{width: "80%"}}></div>
-              </div>
-
-            </li>
-
-            <li className="skills-item">
-
-              <div className="title-wrapper">
-                <h5 className="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div className="skill-progress-bg">
-                <div className="skill-progress-fill" style={{width: "70%"}}></div>
-              </div>
-
-            </li>
-
-            <li className="skills-item">
-
-              <div className="title-wrapper">
-                <h5 className="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div className="skill-progress-bg">
-                <div className="skill-progress-fill" style={{width: "90%"}}></div>
-              </div>
-
-            </li>
-
-            <li className="skills-item">
-
-              <div className="title-wrapper">
-                <h5 className="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div className="skill-progress-bg">
-                <div className="skill-progress-fill" style={{width: "50%"}}></div>
-              </div>
-
-            </li>
-
-          </ul>
 
         </section>
 
