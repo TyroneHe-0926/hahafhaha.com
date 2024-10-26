@@ -14,8 +14,12 @@ function Contact() {
 
         <div className="card-container">
             <div className="card-inner-container">
-                <p className="card">Cell: 7789882087</p>
-                <p className="card">GMail: tyrone99926</p>
+                <p className="card">Cell: &nbsp;
+                    <a style={{color: "inherit", display: "inline-block"}} href="javascript: void(0)">+1(778)988-2087</a>
+                </p>
+                <p className="card">Email: &nbsp;
+                    <a style={{color: "inherit", display: "inline-block"}} href="javascript: void(0)">tyrone99926@gmail.com</a>
+                </p>
                 <p className="card">LinkedIn: Qirong He</p>
             </div>
             <div className="card-inner-container">
