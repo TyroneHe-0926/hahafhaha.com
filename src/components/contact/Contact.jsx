@@ -14,9 +14,9 @@ function Contact() {
 
         <div className="card-container">
             <div className="card-inner-container">
-                <p className="card">IG: tyrone_heee</p>
-                <p className="card">SteamID: 299409201</p>
-                <p className="card">GitHub: TyroneHe-0926</p>
+                <p className="card">Cell: 7789882087</p>
+                <p className="card">GMail: tyrone99926</p>
+                <p className="card">LinkedIn: Qirong He</p>
             </div>
             <div className="card-inner-container">
                 <p className="card">IG: tyrone_heee</p>
