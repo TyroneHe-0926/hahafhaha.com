@@ -19,8 +19,14 @@ function App() {
       <Games/>
       <Blogs/>
       <Contact/>
+      <p style={{ 
+        fontSize:"15px", marginTop:"10px", 
+        color:"hsl(0, 43%, 51%)", 
+        textAlign:"center", justifyContent:"center"}}
+      >
+        &#x2665;	&#x1F418;
+      </p>
     </div>
-
   </main>
   )
 }
