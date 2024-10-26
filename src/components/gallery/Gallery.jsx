@@ -69,7 +69,7 @@ function Gallery() {
     <>
       <section className="galleries">
 
-        <h3 className="h3 galleries-title">Photo Gallery</h3>
+        <h3 className="h3 galleries-title">Photo Gallery (Scroll &#x2192;)</h3>
 
         <ul id="gallery-list" className="galleries-list has-scrollbar">
           <GalleryItem 
