@@ -14,8 +14,8 @@ function Contact() {
 
         <div className="card-container">
             <div className="card-inner-container">
-                <p className="card">Phone (778)988-2087</p>
-                <p className="card">Gmail tyrone99926</p>
+                <p className="card">Phone: 7789882087</p>
+                <p className="card">Gmail: tyrone99926</p>
                 <p className="card">LinkedIn: Qirong He</p>
             </div>
             <div className="card-inner-container">
