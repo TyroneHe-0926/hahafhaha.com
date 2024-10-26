@@ -1193,7 +1193,7 @@ main {
 
   .blog-content { padding: 25px; }
 
-
+}
 
 
 /**
@@ -1256,8 +1256,7 @@ main {
 
   .game-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
-
-
+}
 
 /**
  * responsive larger than 1024px screen
