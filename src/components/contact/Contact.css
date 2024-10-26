@@ -50,17 +50,6 @@
     padding-bottom: 5px;
 }
 
-
-@keyframes transitionIn{
-    from {
-        opacity: 0;
-    }
-
-    to{
-        opacity: 1;
-    }
-}
-
 @media (min-width: 200px) {
   .logo {
     font-size: 40px;
