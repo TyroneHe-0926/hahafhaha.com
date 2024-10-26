@@ -25,7 +25,9 @@
 
 .card-container{
     margin-top: 30px;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
     height: 200px;
