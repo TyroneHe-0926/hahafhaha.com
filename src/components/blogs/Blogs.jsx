@@ -29,7 +29,7 @@ function Blogs() {
             category="Random" blogDate="June 18, 2023" title="Different Types of Dental Specialists"
             blogDesc="One of my friend just started a career in denturist. Before knowing what a denturist is, I thought dentist is your teeth guy and takes care of everything. I did a little research on the difference between Dentist, Denturist, Orthodontist, and some more."/>
 
-            <BlogItem blogURL="https://code.org/helloworld" imageURL="/images/blogs/meepoer-intro.png"
+            <BlogItem blogURL="https://plausible-tune-8e4.notion.site/Meepoer-12bda8498675803a96e8d9b57d8a1c01" imageURL="/images/blogs/meepoer-intro.png"
             category="Project" blogDate="March 1, 2022" title="Building a Social Media Post Generator"
             blogDesc="Meepoer was the first fullstack project I built, which generated Instagram styled posts based on AI."/>
 
