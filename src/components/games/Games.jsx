@@ -44,9 +44,11 @@ function Games() {
             postURL="https://store.steampowered.com/app/268750/Magicite/" 
             imageURL="images/games/magicite.png" />
           </ul>
-
+          <div className="load-more-btn-container">
+            <a href="https://plausible-tune-8e4.notion.site/Blogs-129da84986758046810aebebe2a3637a" 
+            target="_blank" rel="noopener noreferrer" className="load-more-btn">Load More</a>
+          </div>
         </section>
-
     </article>
     )
 }
