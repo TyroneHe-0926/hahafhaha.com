@@ -5,22 +5,36 @@ import Clock from 'react-live-clock';
 
 function Sidebar() {
 
+  function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+  }
+
   const elementToggleFunc = function (elem) { 
     elem.classList.toggle("active"); 
   }
 
   const [sidebar, setSidebar] = useState([])
   const [sidebarBtn, setSidebarBtn] = useState([])
+  const [deviceWidth, setDeviceWidth] = useState(0)
 
   useEffect(() => {
       setSidebar(document.querySelectorAll("[data-sidebar]"))
       setSidebarBtn(document.querySelectorAll("[data-sidebar-btn]"))
+      setDeviceWidth(getWindowDimensions().width)
   }, [])
   
   // sidebar toggle functionality for mobile
   for (let i = 0; i < sidebarBtn.length; i++) {
     sidebarBtn[i].addEventListener("click", function () { elementToggleFunc(sidebar[0]); })
   };
+
+  if(deviceWidth < 580 && sidebar[0]){
+    elementToggleFunc(sidebar[0])
+  }
   
   return (
       <aside className="sidebar" data-sidebar>
