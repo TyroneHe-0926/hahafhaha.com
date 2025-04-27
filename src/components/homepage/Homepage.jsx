@@ -21,10 +21,10 @@ function Homepage() {
             I am also working as a full-time Site Reliability Engineer at Electronic Arts.
           </p>
           <p>
-            Besides school and work, I probably spend 50% of my time gaming. I have wasted around 4000 hrs in DOTA2, written some small mods for Terraria, tried making my own Unity game, and more!
+            Besides school and work, I probably spend 50% of my time playing video games and messing around with stuffs. I have wasted around 4000 hrs in DOTA2, written some small mods for Terraria, trying to build my homelab, and more!
           </p>
           <p>
-            I want to share a little bit about myself, as well as posting blogs (tech, game recommendations, and other stuff) on this site, just as somewhat of a journal, and something that I could reflect back on. 
+            I want to share a little bit about myself, as well as posting blogs (tech, game recommendations, and some other stuff) on this site, just as somewhat of a journal, and something that I could reflect back on. 
           </p>
         </section>
 
@@ -57,10 +57,10 @@ function Homepage() {
               </div>
 
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">Working on Projects</h4>
+                <h4 className="h4 service-item-title">Building Infogrep</h4>
 
                 <p className="service-item-text">
-                  Working on the final year capstone RAG project with my team and some infrastructre related personal projects.
+                  Infogrep is an open source RAGaaS (Retrieval Augmented Generation as a Service) project.
                 </p>
               </div>
 
@@ -76,7 +76,7 @@ function Homepage() {
                 <h4 className="h4 service-item-title">Games I'm on</h4>
 
                 <p className="service-item-text">
-                  Hades 2, Slay the Spire 2, Cult of the Lamb, Dota2, Dota2 Autochess.
+                  Dota2, Diablo 4, Slay the Spire. Trying to start BG3.
                 </p>
               </div>
 
@@ -89,10 +89,10 @@ function Homepage() {
               </div>
 
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">Eight-ball and Nine-ball</h4>
+                <h4 className="h4 service-item-title">Pool and Ping Pong</h4>
 
                 <p className="service-item-text">
-                  I love playing pool (8ball and 9ball), also got into pingpong not too long ago.
+                  I enjoy playing pool (8-ball) and ping pong quite a bit, unfortunately not really too good at either of it though.
                 </p>
               </div>
 

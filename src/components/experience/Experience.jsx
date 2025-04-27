@@ -27,8 +27,8 @@ function Experience() {
               <span>Oct 2024 - Present</span>
 
               <p className="timeline-text">
-                Started my first full-time job as a Site Reliability Engineer. 
-                Currently working on game marketplace and player-to-player gifting and trading platform.
+                Started my first full-time job as a Site Reliability Engineer while finishing my last year of school. 
+                Currently working as a part of EA's Production Infrastructure & Engineering team.
               </p>
 
             </li>

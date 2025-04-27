@@ -46,7 +46,7 @@ function Games() {
           </ul>
           <div className="load-more-btn-container">
             <a href="https://plausible-tune-8e4.notion.site/Blogs-129da84986758046810aebebe2a3637a" 
-            target="_blank" rel="noopener noreferrer" className="load-more-btn">Load More</a>
+            target="_blank" rel="noopener noreferrer" className="load-more-btn">More</a>
           </div>
         </section>
     </article>

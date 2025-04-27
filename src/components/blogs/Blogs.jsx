@@ -12,19 +12,23 @@ function Blogs() {
 
         <section className="blog-posts">
           <ul className="blog-posts-list">
-
-            {/* <BlogItem blogURL="https://plausible-tune-8e4.notion.site/University-of-Waterloo-and-Tech-Jobs-131da84986758011a24cd414180eb938" imageURL="/images/blogs/job-and-waterloo.jpg"
-            category="Sharing" blogDate="Nov 18, 2024" title="University of Waterloo and Tech Jobs"
-            blogDesc="As I am just two months into my first full-time job, I wanted to share a little bit about the job hunting process for me to get my full-time job as well as the Waterloo co-op finding process."/>
             
-            <BlogItem blogURL="https://plausible-tune-8e4.notion.site/Exploring-Backstage-131da8498675807f9139ca8393553a52" imageURL="/images/blogs/backstage.png"
+            {/* <BlogItem blogURL="https://plausible-tune-8e4.notion.site/Exploring-Backstage-131da8498675807f9139ca8393553a52" imageURL="/images/blogs/backstage.png"
             category="Tech" blogDate="Oct 18, 2024" title="Exploring Backstage"
             blogDesc="Came across a really cool tool at work built based on Backstage, wanted to share a little bit more about this open source framework."/> */}
+            
+            <BlogItem blogURL="https://plausible-tune-8e4.notion.site/Infogrep-1e2da849867580d9a5ebd76b3b46cbb3" imageURL="/images/blogs/infogrep.png"
+            category="Tech" blogDate="Work in Progress" title="Infogrep"
+            blogDesc="Infogrep is my uWaterloo software engineering ungrad's capstone project. We are building it towards an open source RAGaaS (Retrieval Augmented Generation as a Service) model. Currently still under development."/>
 
-            <BlogItem blogURL="https://plausible-tune-8e4.notion.site/Monitoring-Github-Actions-131da849867580d994bfcfa1d9108f15" imageURL="/images/blogs/gha.png"
-            category="Tech" blogDate="Aug 30, 2024" title="Monitoring Github Actions"
-            blogDesc="Some thoughts on monitoring jobs, workflows, and runners for GHA. Throughout my internship at Trend Micro, observability of GHA has been a pain point for me."/>
+            <BlogItem blogURL="https://plausible-tune-8e4.notion.site/Building-a-Raspberry-Pi-5-Kubernetes-Cluster-1e2da849867580fab9a3f096d40155bd" imageURL="/images/blogs/rpi5k8s.png"
+            category="Tech" blogDate="Apr 26, 2025" title="Building My Rpi 5 K8s Cluster"
+            blogDesc="Built a self managed k8s cluster with 4 Raspberry Pi 5s. Initially this was intended as an escape from cloud managed k8s when we were on a budget while building the undergrad engineering capstone project. Now I am having lots of fun with it and use it for more than just the capstone project."/>
     
+            <BlogItem blogURL="https://plausible-tune-8e4.notion.site/University-of-Waterloo-and-Tech-Jobs-131da84986758011a24cd414180eb938" imageURL="/images/blogs/job-and-waterloo.jpg"
+            category="Sharing" blogDate="Nov 18, 2024" title="University of Waterloo and Tech Jobs"
+            blogDesc="As I am just two months into my first full-time job, I wanted to share a little bit about the job hunting process for me to get my full-time job as well as the Waterloo co-op finding process."/>
+
             <BlogItem blogURL="https://plausible-tune-8e4.notion.site/Different-Types-of-Dental-Specialists-131da849867580829e1ddf1ca3fb7ab2" imageURL="/images/blogs/dental.jpg"
             category="Random" blogDate="June 18, 2023" title="Different Types of Dental Specialists"
             blogDesc="One of my friend just started a career in denturist. Before knowing what a denturist is, I thought dentist is your teeth guy and takes care of everything. I did a little research on the difference between Dentist, Denturist, Orthodontist, and some more."/>
@@ -47,7 +51,7 @@ function Blogs() {
           </ul>
           <div className="load-more-btn-container">
             <a href="https://plausible-tune-8e4.notion.site/Blogs-129da84986758046810aebebe2a3637a" 
-            target="_blank" rel="noopener noreferrer" className="load-more-btn">Load More</a>
+            target="_blank" rel="noopener noreferrer" className="load-more-btn">More</a>
           </div>
         </section>
     </article>
