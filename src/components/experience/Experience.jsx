@@ -116,10 +116,10 @@ function Experience() {
 
               <h4 className="h4 timeline-item-title">University of Waterloo</h4>
 
-              <span>2020 — 2025</span>
+              <span>2019 — 2025</span>
 
               <p className="timeline-text">
-                Software Engineering undergrad student. SE at uWaterloo is a 5-year program with 3 years of taking academic courses in school and 2 years of internships. The 2 years of internships are further broken down into six 4-month terms. Can't say I liked the school and Waterloo but love the internship oppurtunities it provides.
+                Software Engineering undergrad. SE at uWaterloo is a 5-year program with 3 years of taking academic courses and 2 years of internships. The 2 years of internships are further broken down into six 4-month terms. I took a gap year after my first year of school and extended my internship, also needed to relax and readjust a bit for school. Can't say I liked school, but loved the internship opportunities Waterloo provided.
               </p>
 
             </li>
