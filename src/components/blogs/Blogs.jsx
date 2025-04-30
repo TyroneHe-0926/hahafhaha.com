@@ -22,7 +22,7 @@ function Blogs() {
             blogDesc="Infogrep is my uWaterloo software engineering ungrad's capstone project. We are building it towards an open source RAGaaS (Retrieval Augmented Generation as a Service) model. Currently still under development."/>
 
             <BlogItem blogURL="https://plausible-tune-8e4.notion.site/Building-a-Raspberry-Pi-5-Kubernetes-Cluster-1e2da849867580fab9a3f096d40155bd" imageURL="/images/blogs/workload-cluster.png"
-            category="Tech" blogDate="Apr 30, 2025" title="My AI Workload Cluster"
+            category="Tech" blogDate="Apr 30, 2025" title="Building My Kubernetes Workload Cluster"
             blogDesc="Built a self managed k8s cluster with 4 Raspberry Pi 5s and an Nvidia Jetson Orin Nano. Initially this was intended as an escape from cloud managed k8s when we were on a budget while building the undergrad engineering capstone project. Now I am having lots of fun with it and use it for more than just the capstone project."/>
     
             <BlogItem blogURL="https://plausible-tune-8e4.notion.site/University-of-Waterloo-and-Tech-Jobs-131da84986758011a24cd414180eb938" imageURL="/images/blogs/job-and-waterloo.jpg"
