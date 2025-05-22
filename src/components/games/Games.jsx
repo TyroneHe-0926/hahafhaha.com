@@ -34,10 +34,10 @@ function Games() {
             postURL="https://store.steampowered.com/app/658850/Do_Not_Feed_the_Monkeys/" 
             imageURL="images/games/dnftm.jpeg" />
             
-            <GamesItem category="RPG/OpenWorld" title="The Witcher 3: Wild Hunt" 
-            postURL="https://www.thewitcher.com/us/en/witcher3" imageURL="images/games/witcher3.png" />
+            <GamesItem category="Action/Hack&Slash" title="Dynasty Warriors: Origins" 
+            postURL="https://www.koeitecmoamerica.com/dw_origins/us/" imageURL="images/games/dw-origins.png" />
 
-            <GamesItem category="FPS/SIM" title="Sime Rancher Franchise" 
+            <GamesItem category="FPS/SIM" title="Slime Rancher Franchise" 
             postURL="https://www.slimerancher.com/" imageURL="images/games/slimerancher.webp" />
 
             <GamesItem category="Action/RPG" title="Magicite" 
