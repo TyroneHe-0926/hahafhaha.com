@@ -116,7 +116,8 @@ function Sidebar() {
             <div className="contact-info">
               <p className="contact-title">Location</p>
 
-              <address>Vancouver, BC, Canada</address>
+              <address>Vancouver, BC &</address>
+	      <address>Toronto, ON</address>
             </div>
 
           </li>

@@ -15,19 +15,19 @@ function Homepage() {
             I'm a Software Engineer interested in DevOps, SRE, and Distributed Systems.
           </p>
           <p>
-            I am currently a 5th-year undergrad Software Engineering student at the University of Waterloo.
+            I am a Software Engineering alumni of the University of UWaterloo.
           </p>
           <p>
-            I am also working as a full-time SRE at Electronic Arts.
+            I am currently working as a full-time Site Reliability Engineer at Electronic Arts.
           </p>
           <p>
-            Besides school and work, I probably spend all of my time playing video games and messing around with tech stuff. I have wasted around 4000 hrs in DOTA2, 1000 hours in Terraria, currently got 250 hours in Baldur's Gate 3.
+            Besides school and work, I probably spend all of my time playing video games and messing around with tech stuff. I have wasted around 4000 hrs in DOTA2, 1000 hours in Terraria, currently got 500 hours in Baldur's Gate 3.
           </p>
           <p>
             I am pretty addicted to keyboards right now, check out my <a style={{display: "inline-block", color: "hsl(45, 100%, 72%)"}} href="https://www.notion.so/Keyboards-247da849867580dd8288d6930d0d48c8">keyboard collection</a>. I am also looking for inspirations and planning for a future basement homelab.
           </p>
           <p>
-            I want to use this site as my portfolio and for my blog posts (tech, game, life, random stuff). I do feel like blogs are great record keepers, I could always have something to reflect back on from time to time, they are also pretty fun to write,
+            hahafhaha.com is meant to be my portfolio website and I ocassionally update my blog posts here as well (random stuff). I do feel like blogs are great record keepers, I could always have something to reflect back on from time to time, they are also pretty fun to write,
           </p>
         </section>
 
@@ -44,10 +44,10 @@ function Homepage() {
               </div>
 
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">Learning System Design</h4>
+                <h4 className="h4 service-item-title">Researching and Building My Homelab</h4>
 
                 <p className="service-item-text">
-                  Intrigued in learning how complex large-scale distributed systems are designed and implemented.
+                  Ah, there goes my money.
                 </p>
               </div>
 
@@ -60,10 +60,10 @@ function Homepage() {
               </div>
 
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">Building Infogrep</h4>
+                <h4 className="h4 service-item-title">Vibe Coding</h4>
 
                 <p className="service-item-text">
-                  Infogrep is an open source RAGaaS (Retrieval Augmented Generation as a Service) project.
+                  Building tons of useless projects with Claude Code :)
                 </p>
               </div>
 
@@ -79,7 +79,7 @@ function Homepage() {
                 <h4 className="h4 service-item-title">Games I'm on</h4>
 
                 <p className="service-item-text">
-                  Baldur's Gate 3, Dota 2, Terraria, Brotato.
+                  Baldur's Gate 3, Dota 2, Warhammer 40K Rouge Trader.
                 </p>
               </div>
 
@@ -95,7 +95,7 @@ function Homepage() {
                 <h4 className="h4 service-item-title">Pool and Ping Pong</h4>
 
                 <p className="service-item-text">
-                  I enjoy playing pool (8-ball) and ping pong quite a bit, unfortunately not really too good at either of it though.
+                  I enjoy playing pool (8-ball) and ping pong quite a bit, unfortunately trash at both.
                 </p>
               </div>
 
