@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const EDGE_TOLERANCE = 8;
 
@@ -31,7 +31,10 @@ function ThumbnailRail({ photos, activeIndex, onSelect }) {
     });
   }, [activeIndex]);
 
-  useEffect(() => {
+  // useLayoutEffect (not useEffect) so the edge flags are correct before the
+  // first paint — otherwise the end fade briefly flashes at full opacity on
+  // load and then transitions off.
+  useLayoutEffect(() => {
     updateEdges();
     window.addEventListener("resize", updateEdges);
     return () => window.removeEventListener("resize", updateEdges);
@@ -47,8 +50,21 @@ function ThumbnailRail({ photos, activeIndex, onSelect }) {
     const handleWheel = (event) => {
       // let trackpad horizontal swipes through untouched
       if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
+
+      // deltaY isn't always pixels: Firefox reports whole "lines"
+      // (deltaMode === 1, deltaY ~= ±3) while Chrome/Safari report pixels
+      // (deltaMode === 0, deltaY ~= ±100). Applying line counts as if they
+      // were pixels barely moves the rail, so scrollLeft keeps "changing" by
+      // a few px on every notch, preventDefault() keeps firing, and the page
+      // never gets the wheel back — reproducing the exact bug this rail
+      // exists to fix. Normalize to pixels before applying.
+      const LINE_HEIGHT = 16;
+      const delta =
+        event.deltaMode === 1 ? event.deltaY * LINE_HEIGHT
+        : event.deltaMode === 2 ? event.deltaY * rail.clientWidth
+        : event.deltaY;
       const before = rail.scrollLeft;
-      rail.scrollLeft += event.deltaY;
+      rail.scrollLeft += delta;
       if (rail.scrollLeft !== before) event.preventDefault();
     };
 

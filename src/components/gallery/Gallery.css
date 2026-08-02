@@ -144,7 +144,7 @@
   position: relative; /* offsetParent for the thumbnails' centring math */
   display: flex;
   gap: 9px;
-  padding: 3px;
+  padding: 4px; /* >= outline-offset(2px) + outline(2px) so the active/focus ring isn't clipped by overflow-x */
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scrollbar-width: thin;
