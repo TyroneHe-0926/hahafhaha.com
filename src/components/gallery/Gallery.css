@@ -37,6 +37,11 @@
   cursor: zoom-in;
 }
 
+.gallery-featured-btn:focus-visible {
+  outline: 2px solid var(--orange-yellow-crayola);
+  outline-offset: -4px;
+}
+
 .gallery-featured-img {
   display: block;
   width: 100%;
@@ -123,14 +128,21 @@
 /* ---------- story ---------- */
 
 .gallery-story {
-  /* reserve ~3 lines so switching photos never shifts the page */
-  min-height: 67px;
+  /* every story shares this grid cell, so the block is always as tall as
+     the longest one and switching photos never shifts the page */
+  display: grid;
   margin-top: 14px;
+}
+
+.gallery-story > p {
+  grid-area: 1 / 1;
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
+
+.gallery-story > p.is-hidden { visibility: hidden; }
 
 
 /* ---------- thumbnail rail ---------- */
@@ -200,7 +212,7 @@
 .gallery-rail-fade {
   position: absolute;
   top: 0;
-  bottom: 9px;
+  bottom: 0;
   z-index: 2;
   width: 44px;
   pointer-events: none;
@@ -284,8 +296,6 @@
 
   .gallery-arrow-prev { left: 8px; }
   .gallery-arrow-next { right: 8px; }
-
-  .gallery-story { min-height: 90px; }
 
   .gallery-thumb-item { flex-basis: 68px; }
 }

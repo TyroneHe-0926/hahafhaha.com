@@ -10,7 +10,7 @@ function ThumbnailRail({ photos, activeIndex, onSelect }) {
   const railRef = useRef(null);
   const itemRefs = useRef([]);
   const [atStart, setAtStart] = useState(true);
-  const [atEnd, setAtEnd] = useState(false);
+  const [atEnd, setAtEnd] = useState(true);
 
   const updateEdges = () => {
     const rail = railRef.current;
@@ -88,7 +88,7 @@ function ThumbnailRail({ photos, activeIndex, onSelect }) {
           <li
             key={photo.src}
             className="gallery-thumb-item"
-            ref={(el) => (itemRefs.current[index] = el)}
+            ref={(el) => { itemRefs.current[index] = el; }}
           >
             <button
               type="button"

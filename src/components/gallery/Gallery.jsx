@@ -56,7 +56,7 @@ function Gallery() {
         onOpen={openLightbox}
       />
 
-      <PhotoStory story={active.story} />
+      <PhotoStory photos={photos} activeIndex={activeIndex} />
 
       {total > 1 && (
         <ThumbnailRail

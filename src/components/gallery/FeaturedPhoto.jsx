@@ -37,7 +37,7 @@ function FeaturedPhoto({ photo, index, total, onPrev, onNext, onOpen }) {
         </>
       )}
 
-      <div className="gallery-caption">
+      <div className="gallery-caption" aria-live="polite">
         <h4 className="gallery-caption-title">{photo.title}</h4>
         <time className="gallery-caption-date" dateTime={photo.iso}>{photo.date}</time>
       </div>
