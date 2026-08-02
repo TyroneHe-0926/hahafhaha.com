@@ -133,6 +133,93 @@
 }
 
 
+/* ---------- thumbnail rail ---------- */
+
+.gallery-rail-wrap {
+  position: relative;
+  margin-top: 16px;
+}
+
+.gallery-rail {
+  position: relative; /* offsetParent for the thumbnails' centring math */
+  display: flex;
+  gap: 9px;
+  padding: 3px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--orange-yellow-crayola) var(--onyx);
+}
+
+.gallery-rail::-webkit-scrollbar { height: 6px; }
+
+.gallery-rail::-webkit-scrollbar-track {
+  background: var(--onyx);
+  border-radius: 5px;
+}
+
+.gallery-rail::-webkit-scrollbar-thumb {
+  background: var(--orange-yellow-crayola);
+  border-radius: 5px;
+}
+
+.gallery-thumb-item { flex: 0 0 84px; }
+
+.gallery-thumb {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 9px;
+  overflow: hidden;
+  background: var(--onyx);
+  opacity: 0.45;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  cursor: pointer;
+  transition: var(--transition-1);
+}
+
+.gallery-thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.gallery-thumb:hover { opacity: 0.8; }
+
+.gallery-thumb.active {
+  opacity: 1;
+  outline-color: var(--orange-yellow-crayola);
+}
+
+.gallery-thumb:focus-visible { outline-color: var(--white-2); }
+
+/* fades hint at more thumbnails; each switches off at its own end */
+.gallery-rail-fade {
+  position: absolute;
+  top: 0;
+  bottom: 9px;
+  z-index: 2;
+  width: 44px;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.gallery-rail-fade.start {
+  left: 0;
+  background: linear-gradient(to right, var(--eerie-black-2), transparent);
+}
+
+.gallery-rail-fade.end {
+  right: 0;
+  background: linear-gradient(to left, var(--eerie-black-2), transparent);
+}
+
+.gallery-rail-fade.hidden { opacity: 0; }
+
+
 /* ---------- narrow screens ---------- */
 
 @media (max-width: 580px) {
@@ -146,8 +233,13 @@
   .gallery-arrow-next { right: 8px; }
 
   .gallery-story { min-height: 90px; }
+
+  .gallery-thumb-item { flex-basis: 68px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .gallery-arrow { transition: none; }
+
+  .gallery-thumb,
+  .gallery-rail-fade { transition: none; }
 }

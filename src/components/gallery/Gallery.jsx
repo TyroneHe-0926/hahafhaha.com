@@ -3,6 +3,7 @@ import "./Gallery.css";
 import { photos } from "./photos";
 import FeaturedPhoto from "./FeaturedPhoto";
 import PhotoStory from "./PhotoStory";
+import ThumbnailRail from "./ThumbnailRail";
 
 function Gallery() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -51,6 +52,14 @@ function Gallery() {
       />
 
       <PhotoStory story={active.story} />
+
+      {total > 1 && (
+        <ThumbnailRail
+          photos={photos}
+          activeIndex={activeIndex}
+          onSelect={goTo}
+        />
+      )}
     </section>
   );
 }
