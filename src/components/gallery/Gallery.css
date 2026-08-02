@@ -220,6 +220,59 @@
 .gallery-rail-fade.hidden { opacity: 0; }
 
 
+/* ---------- lightbox ---------- */
+
+.gallery-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery-lightbox-overlay {
+  position: absolute;
+  inset: 0;
+  background: hsl(0, 0%, 5%);
+  opacity: 0.85;
+}
+
+.gallery-lightbox-img {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 14px;
+  box-shadow: var(--shadow-5);
+}
+
+.gallery-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  background: var(--onyx);
+  color: var(--white-2);
+  font-size: 20px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.gallery-lightbox-close:hover,
+.gallery-lightbox-close:focus-visible { opacity: 1; }
+
+.gallery-lightbox-close ion-icon { --ionicon-stroke-width: 50px; }
+
+
 /* ---------- narrow screens ---------- */
 
 @media (max-width: 580px) {

@@ -4,9 +4,11 @@ import { photos } from "./photos";
 import FeaturedPhoto from "./FeaturedPhoto";
 import PhotoStory from "./PhotoStory";
 import ThumbnailRail from "./ThumbnailRail";
+import Lightbox from "./Lightbox";
 
 function Gallery() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
   const total = photos.length;
 
   const goTo = useCallback(
@@ -15,6 +17,9 @@ function Gallery() {
   );
   const goPrev = useCallback(() => goTo(activeIndex - 1), [goTo, activeIndex]);
   const goNext = useCallback(() => goTo(activeIndex + 1), [goTo, activeIndex]);
+
+  const openLightbox = useCallback(() => setLightboxOpen(true), []);
+  const closeLightbox = useCallback(() => setLightboxOpen(false), []);
 
   // Arrow keys move between photos while focus is inside the gallery. Focus
   // lands here naturally via the arrow buttons, so this never steals page
@@ -48,7 +53,7 @@ function Gallery() {
         total={total}
         onPrev={goPrev}
         onNext={goNext}
-        onOpen={() => {}}
+        onOpen={openLightbox}
       />
 
       <PhotoStory story={active.story} />
@@ -60,6 +65,8 @@ function Gallery() {
           onSelect={goTo}
         />
       )}
+
+      {lightboxOpen && <Lightbox photo={active} onClose={closeLightbox} />}
     </section>
   );
 }
