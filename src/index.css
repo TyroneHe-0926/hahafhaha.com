@@ -8,48 +8,48 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    hsl(100, 20%, 96%) 3%, 
+    hsl(100, 16%, 92%) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    hsla(100, 22%, 96%, 0.6) 0%, 
+    hsla(100, 22%, 96%, 0) 100%
+  ), hsl(90, 20%, 98%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+    hsl(100, 40%, 74%) 0%, 
+    hsla(100, 40%, 74%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+    hsla(100, 40%, 74%, 0.35) 0%, 
+    hsla(100, 40%, 74%, 0) 59.86%
+  ), hsl(100, 30%, 96%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
+    hsl(100, 14%, 89%) 0%, 
+    hsla(100, 14%, 89%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    hsl(100, 38%, 74%), 
+    hsl(115, 27%, 52%)
   );
 
-  /* solid */
+  /* solid — light "paper & sage" theme */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --jet: hsl(100, 14%, 89%);              /* borders, separators */
+  --onyx: hsl(100, 22%, 94%);             /* pills, secondary surfaces */
+  --eerie-black-1: hsl(90, 20%, 98%);     /* inner card surface */
+  --eerie-black-2: hsl(0, 0%, 100%);      /* card surface */
+  --smoky-black: hsl(100, 14%, 95%);      /* page background */
+  --white-1: hsl(110, 12%, 12%);          /* ink on pills */
+  --white-2: hsl(110, 12%, 12%);          /* heading ink */
+  --orange-yellow-crayola: hsl(115, 27%, 33%);  /* accent (deep green) */
+  --vegas-gold: hsl(115, 22%, 40%);       /* secondary accent */
+  --light-gray: hsl(105, 7%, 32%);        /* body text */
+  --light-gray-70: hsl(105, 6%, 50%);     /* muted text */
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
@@ -70,20 +70,21 @@
   --fs-8: 11px;
 
   /* font-weight */
-  --fw-300: 300;
+  --fw-300: 400;
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
+  --fw-700: 700;
 
   /**
    * shadow
    */
   
-  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
-  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
-  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+  --shadow-1: -4px 8px 24px hsla(110, 12%, 12%, 0.06);
+  --shadow-2: 0 16px 30px hsla(110, 12%, 12%, 0.06);
+  --shadow-3: 0 16px 40px hsla(110, 12%, 12%, 0.07);
+  --shadow-4: 0 25px 50px hsla(110, 12%, 12%, 0.06);
+  --shadow-5: 0 18px 50px hsla(110, 12%, 12%, 0.07);
 
   /**
    * transition
@@ -130,8 +131,8 @@ input, textarea {
 }
 
 ::selection {
-  background: var(--orange-yellow-crayola);
-  color: var(--smoky-black);
+  background: hsl(100, 38%, 74%);
+  color: hsl(110, 12%, 12%);
 }
 
 :focus { outline-color: var(--orange-yellow-crayola); }
@@ -211,11 +212,22 @@ article.active {
   text-transform: capitalize;
 }
 
-.h2 { font-size: var(--fs-1); }
+.h2 {
+  font-size: var(--fs-1);
+  font-weight: var(--fw-700);
+  letter-spacing: -0.02em;
+}
 
-.h3 { font-size: var(--fs-2); }
+.h3 {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-600);
+  letter-spacing: -0.01em;
+}
 
-.h4 { font-size: var(--fs-4); }
+.h4 {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+}
 
 .h5 {
   font-size: var(--fs-7);
@@ -404,7 +416,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: hsla(0, 0%, 100%, 0.8);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -421,14 +433,14 @@ main {
 }
 
 .navbar-link {
-  color: var(--light-gray);
+  color: var(--light-gray-70);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { color: var(--white-2); }
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
@@ -799,7 +811,7 @@ main {
   }
 
   .article-title {
-    font-weight: var(--fw-600);
+    font-weight: var(--fw-700);
     padding-bottom: 15px;
   }
 
@@ -1006,9 +1018,9 @@ main {
     * shadow
     */
 
-    --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
-    --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
-    --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
+    --shadow-1: -4px 8px 24px hsla(110, 12%, 12%, 0.05);
+    --shadow-2: 0 16px 30px hsla(110, 12%, 12%, 0.05);
+    --shadow-3: 0 16px 40px hsla(110, 12%, 12%, 0.06);
 
   }
 
@@ -1113,13 +1125,12 @@ main {
 
   body::-webkit-scrollbar-thumb {
     border: 5px solid var(--smoky-black);
-    background: hsla(0, 0%, 100%, 0.1);
+    background: hsla(110, 10%, 20%, 0.18);
     border-radius: 20px;
-    box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
-                inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+    box-shadow: none;
   }
 
-  body::-webkit-scrollbar-thumb:hover { background: hsla(0, 0%, 100%, 0.15); }
+  body::-webkit-scrollbar-thumb:hover { background: hsla(110, 10%, 20%, 0.3); }
 
   body::-webkit-scrollbar-button { height: 60px; }
 

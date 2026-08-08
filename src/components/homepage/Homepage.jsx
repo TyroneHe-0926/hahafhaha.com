@@ -24,7 +24,7 @@ function Homepage() {
             Besides school and work, I probably spend all of my time playing video games and messing around with tech stuff. I have wasted around 4000 hrs in DOTA2, 1000 hours in Terraria, currently got 500 hours in Baldur's Gate 3.
           </p>
           <p>
-            I am pretty addicted to keyboards right now, check out my <a style={{display: "inline-block", color: "hsl(45, 100%, 72%)"}} href="https://www.notion.so/Keyboards-247da849867580dd8288d6930d0d48c8">keyboard collection</a>. I am also looking for inspirations and planning for a future basement homelab.
+            I am pretty addicted to keyboards right now, check out my <a style={{display: "inline-block", color: "hsl(115, 27%, 33%)"}} href="https://www.notion.so/Keyboards-247da849867580dd8288d6930d0d48c8">keyboard collection</a>. I am also looking for inspirations and planning for a future basement homelab.
           </p>
           <p>
             hahafhaha.com is meant to be my portfolio website and I ocassionally update my blog posts here as well (random stuff). I do feel like blogs are great record keepers, I could always have something to reflect back on from time to time, they are also pretty fun to write,

@@ -10,10 +10,10 @@
 
 .logo{
     width: 600px;
-    color: whitesmoke;
+    color: hsl(110, 12%, 12%);
     height: 120px;
     border: solid 7px;
-    border-color: hsl(45, 100%, 72%);
+    border-color: hsl(100, 38%, 74%);
     font-size: 70px;
     line-height: 95px;
     text-align: center;
@@ -40,7 +40,7 @@
 }
 
 .card{
-    color: hsl(45, 100%, 71%);
+    color: hsl(115, 27%, 33%);
     font-weight: bold;
     font-size: 15px;
     animation: transitionIn 1s;
@@ -54,7 +54,7 @@
     line-height: 85px;
     height: 100px;
     border: solid 5px;
-    border-color: hsl(45, 100%, 72%);
+    border-color: hsl(100, 38%, 74%);
     text-align: center;
     justify-content: center;
     margin-top: 5%;
@@ -68,7 +68,7 @@
       line-height: 85px;
       height: 100px;
       border: solid 5px;
-      border-color: hsl(45, 100%, 72%);
+      border-color: hsl(100, 38%, 74%);
       text-align: center;
       justify-content: center;
       margin-top: 5%;
@@ -79,10 +79,10 @@
 @media (min-width: 780px) {
     .logo {
         width: 600px;
-        color: whitesmoke;
+        color: hsl(110, 12%, 12%);
         height: 120px;
         border: solid 7px;
-        border-color: hsl(45, 100%, 72%);
+        border-color: hsl(100, 38%, 74%);
         font-size: 70px;
         line-height: 95px;
         text-align: center;
