@@ -3,6 +3,8 @@ import "./Sidebar.css"
 import { useState, useEffect } from "react";
 import Clock from 'react-live-clock';
 
+import { DIRECT_CONTACTS, SOCIAL_CONTACTS } from "../../data/contacts";
+
 function Sidebar() {
 
   function getWindowDimensions() {
@@ -65,33 +67,21 @@ function Sidebar() {
 
         <ul className="contacts-list">
 
-          <li className="contact-item">
+          {DIRECT_CONTACTS.map(({ id, label, value, href, icon }) => (
+            <li className="contact-item" key={id}>
 
-            <div className="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+              <div className="icon-box">
+                <ion-icon name={icon}></ion-icon>
+              </div>
 
-            <div className="contact-info">
-              <p className="contact-title">Email</p>
+              <div className="contact-info">
+                <p className="contact-title">{label}</p>
 
-              <a href="mailto:tyrone99926@gmail.com" className="contact-link">tyrone99926@gmail.com</a>
-            </div>
+                <a href={href} className="contact-link">{value}</a>
+              </div>
 
-          </li>
-
-          <li className="contact-item">
-
-            <div className="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div className="contact-info">
-              <p className="contact-title">Phone</p>
-
-              <a href="tel:+17789882087" className="contact-link">+1 (778) 988-2087</a>
-            </div>
-
-          </li>
+            </li>
+          ))}
 
           <li className="contact-item">
 
@@ -127,35 +117,19 @@ function Sidebar() {
 
         <ul className="social-list">
 
-          <li className="social-item">
-            <a href="https://discord.com/users/396910997928935434" className="social-link">
-              <ion-icon name="logo-discord"></ion-icon>
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a href="https://github.com/TyroneHe-0926" className="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a href="https://www.instagram.com/hahafhaha123/" className="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a href="https://ca.linkedin.com/in/qirong-he-69b154198" className="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a href="https://steamcommunity.com/id/hahafhaha666/" className="social-link">
-              <ion-icon name="logo-steam"></ion-icon>
-            </a>
-          </li>
+          {SOCIAL_CONTACTS.map(({ id, label, href, icon }) => (
+            <li className="social-item" key={id}>
+              <a
+                href={href}
+                className="social-link"
+                title={label}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name={icon}></ion-icon>
+              </a>
+            </li>
+          ))}
 
         </ul>
 
