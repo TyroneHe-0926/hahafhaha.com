@@ -4,6 +4,11 @@ const MAX_TILT = 8;
 const POINTER_QUERY = "(hover: hover) and (pointer: fine)";
 const MOTION_QUERY = "(prefers-reduced-motion: reduce)";
 
+/* The card's drop shadow drifts opposite the lean, as if lit from above. */
+const RESTING_SHADOW_Y = 14;
+const SHADOW_DRIFT_X = 10;
+const SHADOW_DRIFT_Y = 6;
+
 /**
  * Tilts an element toward the pointer and tracks a sheen highlight.
  *
@@ -26,6 +31,8 @@ function useTilt(maxTilt = MAX_TILT) {
     el.style.setProperty("--tilt-x", "0deg");
     el.style.setProperty("--tilt-y", "0deg");
     el.style.setProperty("--sheen-opacity", "0");
+    el.style.setProperty("--shadow-x", "0px");
+    el.style.setProperty("--shadow-y", `${RESTING_SHADOW_Y}px`);
   }, []);
 
   useEffect(() => {
@@ -70,6 +77,11 @@ function useTilt(maxTilt = MAX_TILT) {
         el.style.setProperty("--sheen-x", `${px * 100}%`);
         el.style.setProperty("--sheen-y", `${py * 100}%`);
         el.style.setProperty("--sheen-opacity", "1");
+        el.style.setProperty("--shadow-x", `${(0.5 - px) * SHADOW_DRIFT_X}px`);
+        el.style.setProperty(
+          "--shadow-y",
+          `${RESTING_SHADOW_Y + (0.5 - py) * SHADOW_DRIFT_Y}px`
+        );
       });
     },
     [maxTilt]
